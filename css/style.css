@@ -322,6 +322,9 @@ h4{
 .mrg-020{
     margin: 0px 20px;
 }
+.mrg-0{
+    margin: 0px;
+}
 .marg-auto{
     margin: auto;
 }
@@ -399,6 +402,9 @@ h4{
     position: relative;
     display: inline-block;
     margin-bottom: 10px;
+}
+.back-grey{
+    background-color: #b8b8b8;
 }
 .font-tittle{
     font-size: 42px;
