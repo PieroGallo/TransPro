@@ -1,0 +1,424 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+/* @import url('css/all.min.css'); */
+:root{
+    --color1: #545454;
+    --color2: #1565c0;
+    --color3: #104d92;
+    --color4: #8bc34a;
+    --color5: #3f9c00;;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-naranja: #fb6239;
+    --color-black: #040404;
+    --color-dark: #1b1a1a ;
+}
+
+body{/* Hace referencia a todo el contenido de la página web */
+    font-size: 16px;
+    margin: 0; /* Elimina el margen por defecto de body */
+
+}
+#todo{
+    display: table;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    position: relative;
+    background: var(--color-blanco);
+}
+#header{
+display: block;
+width: 100%;
+position: relative;
+}
+#valores i {
+    color: var(--color-negro);
+    border-radius: 50%;
+    border: solid 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 24px;
+}
+.head-arriba{
+    height: 144px !important;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+}
+
+.barra-negra{
+    min-height: 34px;
+    background-color: #151616;
+}
+.display-flex{
+    display: flex;
+}
+.info-list li{
+    position: relative;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.info-list li::before{
+    position: absolute;
+    left: -18px;
+    top: 9px;
+    content: "";
+    background-color: var(--color-naranja);
+    width: 6px;
+    height: 6px;
+}
+.mrg-25{
+    margin: 25px 0px;
+}
+.boton-black{
+    background-color: var(--color-black);
+    height: 52px;
+    padding: 0 32px;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+    display: inline-grid;
+    position: relative;
+    border-radius: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+.boton-orang{
+    background-color: var(--color-naranja);
+    height: 52px;
+    padding: 0 32px;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+    display: inline-grid;
+    position: relative;
+    border-radius: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+.padd-top10{
+    padding-top: 10px;
+}
+ul{
+    padding-left: 20px;
+}
+.head-list{
+    padding: 0px 14px;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+.padd-info{
+    padding: 50px 30px;
+    border: 1px solid #e2e3e4;
+    margin-left: -1px;
+}
+.cabezera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+.banner{
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+.descripcion-ban{
+    max-width: 500px;
+    left: 15%;
+    position: absolute;
+    top: 40px;
+}
+.wdt-padd{
+    padding: 0px 80px;
+    max-width: 32%;
+}
+.mrg-right{
+    margin-right: 20px;
+}
+.fnt-tit{
+    font-size: 65px;
+    line-height: 80px;
+    font-weight: 600;
+}
+.fnt-weight500{
+    font-weight: 500px;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--color1);;
+}
+a{/* Hipervínculo */
+    font-family: 'Poppins', sans-serif;
+    color: var(--color1);
+    text-decoration: none; /* Para que no se muestren subrayados los hipervínculos */
+}
+a:hover{/* Es el estado al pasar el puntero del mouse sobre el objeto */
+    color: var(--color2);
+    text-decoration: underline;
+}
+
+
+img{
+    display: block; /* Así desaparece el espacio debajo de las imágenes */
+}
+
+h1, h2, h3, h4, h5, h6{/* Separado por comkas definimos una regla pra varios objetos */
+    margin: 0;/* Elimina el margen por defecto de los encabezados */
+}
+
+h1{
+    font-size: 70px;
+    letter-spacing: -1px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 40px;
+    letter-spacing: -1px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+h3{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    line-height: 0.95em;
+}
+h4{
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+#main-footer{
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-gris-claro);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+#redes{
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color3);
+    line-height: 0.9em;
+    text-align: left;
+}
+.container{/* Para definir una regla de estilo para un objeto por su id empieza con . 
+    Una clase se puede asignar a varios objetos
+    */
+    max-width: 1200px; /* ancho máximo */
+
+    /* Al ser ambos márgenes automáticos son iguales y se ve centrado */
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container h1{
+    text-align: center;
+    padding-top: 398px;
+    color: var(--color5);
+    text-shadow: 0 0 8px #000000a3;
+}
+
+.padded{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.row{
+    display: flex; 
+
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row p{
+    text-align: justify;
+}
+.col{
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.col-25{
+    flex-basis: 25%;
+    max-width: 25%;
+}
+.col-33{
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+}
+.col-50{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.col-66{
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+}
+
+.alinear-verticalmente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mega-texto{
+    font-size: 100px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 0.9em;/* em es una medida porcentual respecto al tamaño de la letra */
+}
+.texto-importante{
+    color: var(--color5);
+    font-style: italic;
+}
+#anuncio{
+    background-image: url('../images/seguro.jpg');
+    background-size: cover;
+    text-align: right;
+    color: var(--color-negro);
+    background-attachment: fixed;/* Para que la imagen se quede fija respecto al navegador */
+}
+
+
+.boton-green{
+    background-color: var(--color4);
+    color: #fff;
+    padding: 16px 34px;
+    border-radius: 50px;
+    width: max-content;
+    transition: .5s all ease-in-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.boton-green:hover{
+    background-color: var(--color5);
+    color: #fff;
+}
+.mrg-top10{
+    margin-top: 10px;
+}
+.mrg-top20{
+    margin-top: 20px;
+}
+.mrg-020{
+    margin: 0px 20px;
+}
+.marg-auto{
+    margin: auto;
+}
+.padding-top40{
+    padding-top: 40px;
+}
+.boton-blue{
+    background-color: var(--color2);
+    color: #fff;
+    padding: 16px 34px;
+    border-radius: 50px;
+    width: max-content;
+    transition: .5s all ease-in-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.boton-blue:hover{
+    background-color: var(--color3);
+    color: #fff;
+}
+.boton-vinculo{
+    background-image: linear-gradient(357deg, #101010, #dc0000);
+    color: var(--color-blanco)!important;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: max-content;
+    transition: .5s all ease-in-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.boton-vinculo:hover{
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--color2)!important;
+} 
+.img-tren{
+    margin-right: -100px;
+    margin-bottom: -150px;
+}
+.img-ciudad{
+    margin-top: -150px;
+    margin-left: -100px;
+}
+.centro{
+    text-align: center;
+}
+
+.padd-50{
+    padding: 50px 0px;
+}
+.padd-100{
+    padding-top: 100px;
+}
+.back-dark{
+    background-color: var(--color-dark);
+}
+.dis-flex{
+    display: flex;
+    align-items: center;
+}
+
+.dis-flex-just{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.font-subb{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--color-naranja);
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.font-tittle{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 0;
+}
+.imagen-azul{
+    background-image: url("../images/isil3.jpg");
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.color-white{
+    color: #fff !important;
+}
+
+.box-center{
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
