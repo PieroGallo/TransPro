@@ -10,6 +10,7 @@
     --color-blanco: #FFFFFF;
     --color-negro: #000000;
     --color-naranja: #fb6239;
+    --color-back-org: #ffcbbe66;
     --color-black: #040404;
     --color-dark: #1b1a1a ;
 }
@@ -18,6 +19,15 @@ body{/* Hace referencia a todo el contenido de la página web */
     font-size: 16px;
     margin: 0; /* Elimina el margen por defecto de body */
 
+}
+.color-naranja{
+    color: var(--color-naranja);
+}
+.fnt-15{
+    font-size: 15px;
+}
+.mrg-040{
+    margin: 40px 0px;
 }
 #todo{
     display: table;
@@ -111,6 +121,15 @@ ul{
     padding: 0px 14px;
     list-style: none;
     font-family: 'Poppins', sans-serif;
+}
+.head-list a {
+    text-decoration: none;
+}
+.head-list a:hover {
+    color: var(--color-naranja);
+}
+.active{
+    color: var(--color-naranja);
 }
 .padd-info{
     padding: 50px 30px;
@@ -319,6 +338,9 @@ h4{
 .mrg-top20{
     margin-top: 20px;
 }
+.mrg-top35{
+    margin-top: 35px;
+}
 .mrg-020{
     margin: 0px 20px;
 }
@@ -393,6 +415,10 @@ h4{
     align-items: center;
     justify-content: space-between;
 }
+.dis-flex-center{
+    display: flex;
+    align-items: center;
+}
 .font-subb{
     font-size: 15px;
     font-weight: 700;
@@ -405,6 +431,7 @@ h4{
 }
 .back-grey{
     background-color: #b8b8b8;
+    padding: 16px 0px;
 }
 .font-tittle{
     font-size: 42px;
@@ -427,4 +454,18 @@ h4{
     display: block;
     margin: auto;
     text-align: center;
+}
+.back-orange{
+    background-color: var(--color-back-org);
+    padding: 40px 0px;
+    text-align: center;
+}
+.font-weight6{
+    font-weight: 600;
+}
+.mrg-left30{
+    margin-left: 30px;
+}
+.mrg-left60{
+    margin-left: 60px;
 }
